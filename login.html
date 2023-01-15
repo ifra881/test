@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="iconn.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Dashboard - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+          <div class="square" style="--i:0;"></div>
+          <div class="square" style="--i:1;"></div>
+          <div class="square" style="--i:2;"></div>
+          <div class="square" style="--i:3;"></div>
+          <div class="square" style="--i:4;"></div>
+          <div class="square" style="--i:5;"></div>
+          <div class="container">
+            <div class="form">
+              <h2>Login </h2>
+              <div class="loginas">
+                <div class="a1 button-border" id="1" onclick="change(this.id)">Executive </div>
+                <div class="a1" id="2"onclick="change(this.id)">Director</div>
+                <div class="a1" id="3" onclick="change(this.id)">Member</div>
+              </div>
+              <form>
+                <div class="inputBox">
+                  <input type="text" placeholder="Username">
+    
+                  <input type="password" placeholder="Password">
+                  <button  class="b">LogIn</button>
+                </div>
+              </form>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+<script>
+  function change(e){
+    var removing =document.getElementsByClassName('button-border')
+    removing[0].classList.remove('button-border')
+    var changing=document.getElementById(e)
+    changing.classList.add('button-border')
+
+
+  }
+</script>
+</html>
